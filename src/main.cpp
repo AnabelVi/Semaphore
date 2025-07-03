@@ -12,3 +12,16 @@ void setup()
     digitalWrite(green, LOW);
 
 }
+
+void loop()
+{
+    digitalWrite(red, LOW);
+    digitalWrite(green, HIGH);
+    delay(SECONDS(10));
+    digitalWrite(green, LOW);
+    digitalWrite(yellow, HIGH);
+    delay(SECONDS(2));
+    digitalWrite(yellow, LOW);
+    digitalWrite(red, HIGH);
+    delay(SECONDS(10));
+}
